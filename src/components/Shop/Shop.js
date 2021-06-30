@@ -1,7 +1,7 @@
 export default function Shop() {
     return (
-        <nav>
+        <section>
             <h2>SHOP</h2>
-        </nav>
+        </section>
     );
 }
