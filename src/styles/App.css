@@ -1,0 +1,71 @@
+/*************************************
+**************** HEAD ****************
+*************************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* LIGHT COLOR SCHEME */
+.theme-light {
+    --white: white;
+    --bg100: ghostwhite;
+    --bg200: rgb(236, 236, 243);
+    --bg300: rgb(212, 212, 219);
+    --bg400: rgb(196, 196, 201);
+    --bg500: rgb(187, 187, 187);
+    --color100: rgb(112, 134, 255);
+    --color200: rgb(96, 115, 226);
+    --color300: rgb(77, 94, 194);
+    --color400: rgb(57, 73, 167);
+    --color500: rgb(38, 51, 126);
+    --text: rgb(11, 11, 12);
+}
+/* DARK COLOR SCHEME */
+.theme-dark {
+}
+
+a {
+    text-decoration: none;
+}
+
+/*************************************
+**************** BODY ****************
+*************************************/
+
+#root {
+    background-color: var(--bg100);
+    color: var(--text);
+    font-family: "Nunito Sans";
+    overflow-x: hidden;
+    transition: 0.2s ease;
+}
+
+.main {
+    padding: 100px 0 0 0;
+    min-height: 85vh;
+}
+
+/*************************************
+*************** HEADER ***************
+*************************************/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--white);
+}
+
+/*************************************
+*************** FOOTER ***************
+*************************************/
+footer {
+    background-color: var(--white);
+}

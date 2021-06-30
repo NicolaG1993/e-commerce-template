@@ -1,7 +1,12 @@
+import Nav from "./Nav";
+import ColorModeButton from "./ColorModeButton";
+
 export default function Header() {
     return (
-        <nav>
+        <header>
             <h2>HEADER</h2>
-        </nav>
+            <ColorModeButton />
+            <Nav />
+        </header>
     );
 }

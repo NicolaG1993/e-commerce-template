@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Header, Footer } from "./components";
 import { Home, About, Contact, Shop } from "./components";
+import "./styles/App.css";
 
 function App() {
     return (
