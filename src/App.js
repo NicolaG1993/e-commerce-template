@@ -1,10 +1,19 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
+import { connect } from "react-redux";
+import { loadData } from "./redux/actions";
+// import { commerce } from "./lib/commerce";
 import { Header, Footer } from "./components";
 import { Home, About, Contact, Shop } from "./components";
 import "./styles/App.css";
 
-function App() {
+function App(props) {
+    const [state, setState] = useState({});
+    console.log(setState, state);
+
+    useEffect(() => props.dispatch(loadData()), []);
+
+    console.log("redux state in app: ", props.state);
     return (
         <BrowserRouter>
             <div className="App">
@@ -21,10 +30,13 @@ function App() {
     );
 }
 
-export default App;
+function mapStateToProps(state) {
+    return { state };
+}
+export default connect(mapStateToProps)(App);
 
 // 🥑🍄
-// settare slider 🍄
+// settare slider 🥑
 // settare .env (no webpack) 🍄
 // settare redux 🍄
 // creare nuovo shop su commerce.js 🍄

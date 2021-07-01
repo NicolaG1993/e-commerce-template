@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { memo } from "react";
-// eslint-disable-next-line indent
 import { css } from "@emotion/react";
 
 const Dot = ({ active }) => {
