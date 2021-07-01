@@ -131,9 +131,15 @@ footer {
     position: absolute;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.198);
+    transition: 1s ease;
+    padding: var(--page-padding);
 }
 .category:hover > img {
     max-height: 230px;
     filter: grayscale(100%);
+}
+.category:hover > h3 {
+    background-color: rgba(0, 0, 0, 0.39);
+    /* width: var(--category-size); */
 }

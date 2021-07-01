@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
-const pages = [
-    { title: "Home", url: "/" },
-    { title: "About", url: "/about" },
-    { title: "Shop", url: "/shop" },
-]; // portare in redux 🍄
 
-export default function Footer() {
+export default function Footer({ pages }) {
     return (
         <footer>
             <h3>Links</h3>

@@ -1,5 +1,5 @@
 import Categories from "./Categories";
-import allCategories from "./index/allCategories";
+import allCategories from "./data/allCategories";
 export default function Shop() {
     return (
         <section>

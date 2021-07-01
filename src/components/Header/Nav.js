@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
-const pages = [
-    { title: "Home", url: "/" },
-    { title: "About", url: "/about" },
-    { title: "Shop", url: "/shop" },
-]; // portare in redux 🍄
 
-export default function Nav() {
+export default function Nav({ pages }) {
     return (
         <nav>
             {pages.map((page, i) => (

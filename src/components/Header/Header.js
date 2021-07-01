@@ -2,14 +2,14 @@ import Nav from "./Nav";
 import Logo from "../Logo/Logo";
 import ColorModeButton from "./ColorModeButton";
 
-export default function Header() {
+export default function Header({ pages }) {
     return (
         <header>
             <div>
                 <Logo />
                 <ColorModeButton />
             </div>
-            <Nav />
+            <Nav pages={pages} />
         </header>
     );
 }
