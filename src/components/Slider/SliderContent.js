@@ -1,7 +1,6 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import React from "react";
-import { css, jsx } from "@emotion/react";
+/** @jsxImportSource @emotion/react */
+
+import { css } from "@emotion/react";
 
 const SliderContent = (props) => (
     <div

@@ -1,7 +1,7 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import React, { memo } from "react";
-import { css, jsx } from "@emotion/react";
+/** @jsxImportSource @emotion/react */
+import { memo } from "react";
+// eslint-disable-next-line indent
+import { css } from "@emotion/react";
 
 const Dot = ({ active }) => {
     return (
@@ -11,8 +11,10 @@ const Dot = ({ active }) => {
                 margin: 5px;
                 border-radius: 50%;
                 background: ${active
-                    ? "rgb(231, 134, 235)"
-                    : "rgb(205,205,205)"};
+                    ? // eslint-disable-next-line indent
+                      "rgb(231, 134, 235)"
+                    : // eslint-disable-next-line indent
+                      "rgb(205,205,205)"};
             `}
         />
     );

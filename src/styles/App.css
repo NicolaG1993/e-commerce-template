@@ -38,7 +38,6 @@ a {
 /*************************************
 **************** BODY ****************
 *************************************/
-
 #root {
     background-color: var(--bg100);
     color: var(--text);
@@ -82,7 +81,14 @@ footer {
     background-color: var(--white);
 }
 
-#home > div:nth-child(1) {
+/*************************************
+*************** SLIDER ***************
+*************************************/
+.sliderBox {
     height: 50vh;
     background-color: var(--color400);
+
+    position: relative;
+    width: 100%;
+    margin: 0 auto 0 auto;
 }

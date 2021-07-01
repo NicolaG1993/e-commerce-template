@@ -1,7 +1,6 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import React, { memo } from "react";
-import { css, jsx } from "@emotion/react";
+/** @jsxImportSource @emotion/react */
+import { memo } from "react";
+import { css } from "@emotion/react";
 import leftArrow from "./img/left-arrow.svg";
 import rightArrow from "./img/right-arrow.svg";
 

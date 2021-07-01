@@ -1,8 +1,6 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
-import React, { useState, useEffect, useRef, useCallback } from "react";
-import "../../styles/Slider.css";
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+import { useState, useEffect, useRef } from "react";
 
 import SliderContent from "./SliderContent";
 import Slide from "./Slide";

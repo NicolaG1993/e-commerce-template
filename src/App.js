@@ -24,8 +24,8 @@ function App() {
 export default App;
 
 // 🥑🍄
-// settare redux 🍄
-// settare .env (no webpack) 🍄
 // settare slider 🍄
+// settare .env (no webpack) 🍄
+// settare redux 🍄
 // creare nuovo shop su commerce.js 🍄
 // sistemare dark-light mode 🍄
