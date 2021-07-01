@@ -3,4 +3,4 @@ export default [
     "https://images.everyeye.it/img-notizie/il-re-leone-nuove-immagini-ufficiali-remake-disney-copertina-ew-v4-374896-1280x720.jpg",
     "https://adolfoleoni.files.wordpress.com/2017/07/mare.jpg?w=736",
     "https://static-www.ilcrotonese.it/wp-content/2019/07/LOCANDINA-di-Federica-Mammone-653x367.jpg",
-];
+]; // portare in redux 🍄

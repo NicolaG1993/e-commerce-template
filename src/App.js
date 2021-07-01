@@ -37,7 +37,9 @@ export default connect(mapStateToProps)(App);
 
 // 🥑🍄
 // settare slider 🥑
-// settare .env (no webpack) 🍄
-// settare redux 🍄
-// creare nuovo shop su commerce.js 🍄
+// settare .env (no webpack) 🥑
+// settare redux 🥑
 // sistemare dark-light mode 🍄
+
+// creare nuovo shop su commerce.js 🍄
+// settare .env per deploy 🍄

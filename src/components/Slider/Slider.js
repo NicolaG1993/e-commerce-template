@@ -92,7 +92,7 @@ const Slider = (props) => {
         if (scrollTop > 150) {
             setParallaxHeight(`35vh`);
         } else {
-            setParallaxHeight(`70vh`);
+            setParallaxHeight(`60vh`);
         }
     }, [scrollTop]);
 

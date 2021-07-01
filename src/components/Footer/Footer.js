@@ -8,7 +8,7 @@ const pages = [
 export default function Footer() {
     return (
         <footer>
-            <h2>FOOTER</h2>
+            <h3>Links</h3>
             <ul>
                 {pages.map((page, i) => (
                     <li key={page.title + i}>
