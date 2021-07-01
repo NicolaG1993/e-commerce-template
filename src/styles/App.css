@@ -46,8 +46,8 @@ a {
     transition: 0.2s ease;
     --page-padding: 3px 15px;
     --category-size: 200px;
+    /* scrivere var anche per font sizes e piu cose possibili */
 }
-
 .main {
     padding: 64px 0 0 0;
     min-height: 85vh;
@@ -142,4 +142,44 @@ footer {
 .category:hover > h3 {
     background-color: rgba(0, 0, 0, 0.39);
     /* width: var(--category-size); */
+}
+
+/*************************************
+*************** ABOUT ****************
+*************************************/
+#aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutus-comp-div {
+    padding: 40px;
+}
+.aboutus-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.unsplash.com/photo-1506241537529-eefea1fbe44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80")
+        no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+}
+.aboutus-box1-text {
+    max-width: 550px;
+    text-align: center;
+    color: white;
+}
+.aboutus-box1-text > h1 {
+    margin-bottom: 30px;
+}
+.aboutus-box1-text > p {
+    font-size: 13.5pt;
+}
+
+.aboutus-box2 {
+    margin: 90px 0 110px 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    max-width: 1110px;
 }
