@@ -7,9 +7,9 @@ export default function Header({ pages }) {
         <header>
             <div>
                 <Logo />
+                <Nav pages={pages} />
                 <ColorModeButton />
             </div>
-            <Nav pages={pages} />
         </header>
     );
 }

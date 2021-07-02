@@ -1,3 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Teko);
+@import url(https://fonts.googleapis.com/css?family=Jura);
+@import url(https://fonts.googleapis.com/css?family=Mandali);
+@import url(https://fonts.googleapis.com/css?family=Mallanna);
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Prata);
+@import url(https://fonts.googleapis.com/css?family=Glegoo);
+@import url(https://fonts.googleapis.com/css?family=Literata);
+@import url(https://fonts.googleapis.com/css?family=Suranna);
+
 /*************************************
 **************** HEAD ****************
 *************************************/
@@ -10,6 +22,19 @@
 
 html {
     scroll-behavior: smooth;
+    --page-padding: 3px 15px;
+    --category-size: 200px;
+    --font1: "Quicksand";
+    --font2: "Teko";
+    --font3: "Jura";
+    --font4: "Mandali";
+    --font5: "Mallanna";
+    --fontA: "Playfair Display";
+    --fontB: "Prata";
+    --fontC: "Glegoo";
+    --fontD: "Literata";
+    --fontE: "Suranna";
+    /* scrivere var anche per font sizes e piu cose possibili */
 }
 
 /* LIGHT COLOR SCHEME */
@@ -31,8 +56,16 @@ html {
 .theme-dark {
 }
 
+h2 {
+    font-family: var(--fontB); /*A B E oppure standard*/
+    font-size: 24px;
+    line-height: 20px;
+    padding-top: 4px;
+}
+
 a {
     text-decoration: none;
+    color: var(--text);
 }
 
 /*************************************
@@ -41,20 +74,30 @@ a {
 #root {
     background-color: var(--bg100);
     color: var(--text);
-    font-family: "Nunito Sans";
+    font-family: var(--font1); /*1 4 o 5 , il 3 anche non male, 2 peggiore*/
     overflow-x: hidden;
     transition: 0.2s ease;
-    --page-padding: 3px 15px;
-    --category-size: 200px;
-    /* scrivere var anche per font sizes e piu cose possibili */
 }
 .main {
-    padding: 64px 0 0 0;
+    padding: 45px 0 0 0;
     min-height: 85vh;
 }
 
 section {
     padding: var(--page-padding);
+}
+
+.large-box {
+    height: 80vh;
+    border-bottom: 1px solid darkgrey;
+}
+.medium-box {
+    height: 65vh;
+    border-bottom: 1px solid darkgrey;
+}
+.small-box {
+    height: 50vh;
+    border-bottom: 1px solid darkgrey;
 }
 
 /*************************************
@@ -71,18 +114,18 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 15px;
+    padding: 10px 15px 11px 15px;
 }
-
 /*************************************
 ***************** NAV ****************
 *************************************/
 nav {
-    background-color: var(--bg400);
+    /* background-color: var(--bg400); */
     display: flex;
     column-gap: 50px;
-    padding: var(--page-padding);
+    padding: 2px 15px 0 15px;
     justify-content: center;
+    /* text-transform: uppercase; */
 }
 
 /*************************************
@@ -92,6 +135,10 @@ footer {
     background-color: var(--white);
     padding: var(--page-padding);
 }
+
+/*************************************
+**************** HOME ****************
+*************************************/
 
 /*************************************
 *************** SLIDER ***************

@@ -44,7 +44,7 @@ export default connect(mapStateToProps)(App);
 // display shop products
 // attiva shop filters 🍄
 // creare pagina contatto + form 🍄
-// pagina about us 🍄
+// pagina about us 🥑
 
 // creare nuovo shop su commerce.js 🍄
 // settare .env per deploy 🍄

@@ -6,7 +6,11 @@ export default function Home() {
     return (
         <div id="home">
             <Slider slides={images} autoPlay={10} />
-            <Link to={"/shop"}>Vedi tutti gli articoli</Link>
+            <div className="large-box">
+                <Link to={"/shop"}>Vedi tutti gli articoli</Link>
+            </div>
+            <div className="large-box"></div>
+            <div className="large-box"></div>
         </div>
     );
 }
