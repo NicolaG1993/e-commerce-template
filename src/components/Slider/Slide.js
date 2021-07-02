@@ -2,12 +2,12 @@
 import { memo } from "react";
 import { css } from "@emotion/react";
 
-const Slide = ({ content, width }) => {
+const Slide = ({ content }) => {
     return (
         <div
             css={css`
                 height: 100%;
-                width: ${width}px;
+                width: 100vw;
                 background-image: url("${content}");
                 background-size: cover;
                 background-repeat: no-repeat;

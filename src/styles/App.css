@@ -22,7 +22,9 @@
 
 html {
     scroll-behavior: smooth;
-    --page-padding: 3px 15px;
+    --page-padding1: 0px 15px;
+    --page-padding2: 3px 15px;
+    --high-padding: 40px;
     --category-size: 200px;
     --font1: "Quicksand";
     --font2: "Teko";
@@ -38,8 +40,9 @@ html {
 }
 
 /* LIGHT COLOR SCHEME */
-.theme-light {
+.aaa {
     --white: white;
+    --black: rgb(11, 11, 12);
     --bg100: ghostwhite;
     --bg200: rgb(236, 236, 243);
     --bg300: rgb(212, 212, 219);
@@ -52,8 +55,49 @@ html {
     --color500: rgb(38, 51, 126);
     --text: rgb(11, 11, 12);
 }
+
+.theme-light {
+    --white: white;
+    --black: rgb(11, 11, 12);
+    --bg000: white;
+    --bg100: ghostwhite;
+    --bg200: rgb(229, 229, 229);
+    --bg300: rgb(212, 212, 219);
+    --bg400: rgb(196, 196, 201);
+    --bg500: rgb(187, 187, 187);
+    --bg600: rgb(160, 160, 160);
+    --color000: rgb(142, 202, 230);
+    --color100: rgb(33, 158, 188);
+    --color200: rgb(18, 130, 162);
+    --color300: rgb(3, 64, 120);
+    --color400: rgb(0, 31, 84);
+    --color500: rgb(10, 17, 40);
+    --color600: rgb(11, 11, 12);
+    --color-b100: rgb(255, 183, 3);
+    --color-b200: rgb(251, 133, 0);
+    --text: rgb(11, 11, 12);
+}
 /* DARK COLOR SCHEME */
 .theme-dark {
+    --white: white;
+    --black: rgb(11, 11, 12);
+    --bg000: rgb(11, 11, 12);
+    --bg100: rgb(10, 17, 40);
+    --bg200: rgb(0, 31, 84);
+    --bg300: rgb(3, 64, 120);
+    --bg400: rgb(18, 130, 162);
+    --bg500: rgb(33, 158, 188);
+    --bg600: rgb(142, 202, 230);
+    --color000: rgb(160, 160, 160);
+    --color100: rgb(187, 187, 187);
+    --color200: rgb(196, 196, 201);
+    --color300: rgb(212, 212, 219);
+    --color400: rgb(229, 229, 229);
+    --color500: ghostwhite;
+    --color600: white;
+    --color-b100: rgb(255, 183, 3);
+    --color-b200: rgb(251, 133, 0);
+    --text: white;
 }
 
 h2 {
@@ -68,15 +112,20 @@ a {
     color: var(--text);
 }
 
+::selection {
+    background-color: var(--text);
+    color: var(--bg100);
+}
+
 /*************************************
 **************** BODY ****************
 *************************************/
 #root {
-    background-color: var(--bg100);
     color: var(--text);
     font-family: var(--font1); /*1 4 o 5 , il 3 anche non male, 2 peggiore*/
     overflow-x: hidden;
     transition: 0.2s ease;
+    background-color: var(--bg000);
 }
 .main {
     padding: 45px 0 0 0;
@@ -84,20 +133,36 @@ a {
 }
 
 section {
-    padding: var(--page-padding);
+    padding: var(--page-padding1);
+    background-color: var(--bg000);
 }
 
+/*size*/
 .large-box {
-    height: 80vh;
+    min-height: 80vh;
     border-bottom: 1px solid darkgrey;
 }
 .medium-box {
-    height: 65vh;
+    height: 60vh;
     border-bottom: 1px solid darkgrey;
 }
 .small-box {
-    height: 50vh;
-    border-bottom: 1px solid darkgrey;
+    height: 45vh;
+    border-bottom: 1px solid darkgrey; /*fibonacci sequence*/
+}
+/*layout*/
+.flex-box-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-box-6and4 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+/*padding and margin*/
+.high-padding {
+    padding: var(--high-padding);
 }
 
 /*************************************
@@ -108,7 +173,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 20;
-    background-color: var(--white);
+    /* background-color: var(--white); */
 }
 header > div {
     display: flex;
@@ -132,21 +197,21 @@ nav {
 *************** FOOTER ***************
 *************************************/
 footer {
-    background-color: var(--white);
-    padding: var(--page-padding);
+    background-color: var(--bg100);
+    padding: var(--page-padding2);
 }
 
 /*************************************
 **************** HOME ****************
 *************************************/
-
+#home {
+    background-color: var(--bg000);
+}
 /*************************************
 *************** SLIDER ***************
 *************************************/
 .sliderBox {
-    /* height: 50vh; */
     background-color: var(--color400);
-
     position: relative;
     width: 100%;
     margin: 0 auto 0 auto;
@@ -177,10 +242,10 @@ footer {
 .category > h3 {
     position: absolute;
     text-align: center;
-    color: white;
+    color: var(--white);
     background-color: rgba(0, 0, 0, 0.198);
     transition: 1s ease;
-    padding: var(--page-padding);
+    padding: var(--page-padding2);
 }
 .category:hover > img {
     max-height: 230px;
@@ -199,34 +264,29 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-.aboutus-comp-div {
-    padding: 40px;
-}
-.aboutus-box1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#aboutus > .flex-box-centered:nth-child(1) {
     background: url("https://images.unsplash.com/photo-1506241537529-eefea1fbe44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80")
         no-repeat center center;
     background-size: cover;
-    height: 450px;
-    width: 100%;
+    width: 100vw;
+    margin-bottom: 90px;
 }
 .aboutus-box1-text {
     max-width: 550px;
     text-align: center;
-    color: white;
+    color: var(--white);
 }
-.aboutus-box1-text > h1 {
-    margin-bottom: 30px;
+.bottom-1em {
+    margin-bottom: 1em;
+}
+.bottom-2em {
+    margin-bottom: 2em;
 }
 .aboutus-box1-text > p {
     font-size: 13.5pt;
 }
 
-.aboutus-box2 {
-    margin: 90px 0 110px 0;
-    display: grid;
-    grid-template-columns: 60% 40%;
+#aboutus > .grid-box-6and4:nth-child(2) {
+    margin-bottom: 110px;
     max-width: 1110px;
 }

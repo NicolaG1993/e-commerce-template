@@ -11,9 +11,9 @@ const Dot = ({ active }) => {
                 border-radius: 50%;
                 background: ${active
                     ? // eslint-disable-next-line indent
-                      "rgb(231, 134, 235)"
+                      "var(--color300)"
                     : // eslint-disable-next-line indent
-                      "rgb(205,205,205)"};
+                      "var(--bg300)"};
             `}
         />
     );

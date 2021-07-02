@@ -7,7 +7,7 @@ export default function Shop() {
                 <h2>SHOP</h2>
             </div>
 
-            <div className="medium-box">
+            <div className="large-box">
                 <h3>Choose a category</h3>
                 <Categories categories={allCategories} />
             </div>
