@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div id="home">
             <Slider slides={images} autoPlay={10} />
-            <div className="large-box">
+            <div className="large-box flex-box-centered high-padding">
                 <Link to={"/shop"}>Vedi tutti gli articoli</Link>
             </div>
             <div className="large-box"></div>

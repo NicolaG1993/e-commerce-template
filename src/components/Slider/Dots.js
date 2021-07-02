@@ -11,9 +11,9 @@ const Dot = ({ active }) => {
                 border-radius: 50%;
                 background: ${active
                     ? // eslint-disable-next-line indent
-                      "var(--color300)"
+                      "var(--color200)"
                     : // eslint-disable-next-line indent
-                      "var(--bg300)"};
+                      "var(--bg200)"};
             `}
         />
     );
@@ -26,7 +26,7 @@ const Dots = ({ slides, activeSlide }) => {
         <div
             css={css`
                 position: absolute;
-                bottom: -60px;
+                bottom: 10px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
