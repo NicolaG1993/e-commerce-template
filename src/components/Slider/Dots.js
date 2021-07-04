@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { memo } from "react";
 import { css } from "@emotion/react";
+import { memo } from "react";
 
 const Dot = ({ active }) => {
     return (
@@ -9,11 +9,13 @@ const Dot = ({ active }) => {
                 padding: 6px;
                 margin: 5px;
                 border-radius: 50%;
-                background: ${active
-                    ? // eslint-disable-next-line indent
-                      "var(--color200)"
-                    : // eslint-disable-next-line indent
-                      "var(--bg200)"};
+                background: ${
+                    active
+                        ? // eslint-disable-next-line indent
+                          "var(--color200)"
+                        : // eslint-disable-next-line indent
+                          "var(--bg200)"
+                };
             `}
         />
     );

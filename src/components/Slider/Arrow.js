@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { memo } from "react";
 import { css } from "@emotion/react";
+import { memo } from "react";
 import leftArrow from "./img/left-arrow.svg";
 import rightArrow from "./img/right-arrow.svg";
 

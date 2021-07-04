@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { memo } from "react";
 import { css } from "@emotion/react";
+import { memo } from "react";
 
 const Slide = ({ content }) => {
     return (

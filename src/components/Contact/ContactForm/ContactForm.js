@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import axios from "../../../axios";
+import axios from "../../../utils/axios";
 import StepA from "./steps/StepA";
 import StepB from "./steps/StepB";
 import StepC from "./steps/StepC";
@@ -27,8 +27,7 @@ function ContactForm() {
     const confirmAndSend = async () => {
         nextStep();
         try {
-            // const resp = await axios.post("/contact-us", contactReq);
-            const resp = {}; //elimina
+            const resp = await axios.post("/contact-us", contactReq);
             console.log("resp: ", resp);
 
             if (resp.data.emailSended) {
@@ -66,7 +65,7 @@ function ContactForm() {
 
     return (
         <div className="contact-form-wrap">
-            <h1 className="contact-form-col-full">Contatta da Mamy a Mamy</h1>
+            <h2 className="contact-form-col-full">Contatta da Mamy a Mamy</h2>
             {activeStep === steps.length ? <Confirmation /> : <Form />}
         </div>
     );

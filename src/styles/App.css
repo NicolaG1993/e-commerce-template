@@ -320,6 +320,7 @@ footer {
 ************** CONTACT ***************
 *************************************/
 #contact h2 {
+    margin-bottom: 1em;
 }
 .contact-list-blocks {
     margin-bottom: 20px;

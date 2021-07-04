@@ -5,7 +5,7 @@ export default function ContactList() {
         <div id="contact-list" className="flex-box-column">
             <div className="flex-box-column">
                 <div className="bottom-1em">
-                    <h2 className="bottom-1em">Contatto</h2>
+                    <h2>Contatto</h2>
                     <div className="contact-list-blocks">
                         <div>
                             <Shop />
@@ -54,7 +54,7 @@ export default function ContactList() {
                 </div>
 
                 <div>
-                    <h2 className="bottom-1em">Seguici</h2>
+                    <h2>Seguici</h2>
                     <div className="contact-list-socials">
                         <p>
                             <a
